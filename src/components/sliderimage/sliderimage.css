@@ -1,0 +1,89 @@
+:root {
+    --hatterszin: rgba(69, 69, 69, 1);
+    --szovegszin: white;
+    --altszin: rgb(82, 82, 253);
+    --mainfont: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.CardContainer {
+    display: flex;
+    flex-basis: 33%;
+    border: 4px solid var(--hatterszin);
+    border-radius: 40px;
+    justify-content: center;
+    width: 560px;
+    text-align: center;
+    height: 100%;
+    flex-direction: column;
+    box-shadow: 0px 20px 43px 7px rgba(0,0,0,0.6);
+    background-color: var(--hatterszin);
+    margin-left: 40px;
+    color: var(--szovegszin);
+}
+h2 {
+    margin-bottom: 15px;
+}
+.ImageContainer {
+    flex-direction: column;
+    height: 100%;
+    margin-top: 20px;
+}
+.ImageContainer img {
+    border-radius: 40px;
+    width: 500px;
+}
+.ImageContainer a {
+    height: 10%;
+}
+.CardContainer hr {
+    width: 80%;
+    margin: auto;
+    border: 5px solid var(--szovegszin);
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 15px;
+}
+.after {
+    margin-top: -90%;
+    margin-bottom: 19px;
+    z-index: -9999;
+}
+.before {
+    z-index: 99999;
+    margin-top: 10%;
+}
+#slider {
+    appearance: none;
+    width: 80%;
+    color: var(--altszin);
+    background-color: var(--altszin);
+    border-radius: 50px;
+    height: 40px;
+    outline: 0;
+    transition: 0.3s ease-in-out;
+}
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 70px;
+    height: 40px;
+    background: url("https://media.discordapp.net/attachments/1200923236364456017/1204498553456693340/BA.png?ex=65d4f3b1&is=65c27eb1&hm=0cae6e5786d616e738204626cafbe9cc962eb178ffb8d12101816e4608e78fc0&=&format=webp&quality=lossless");
+    border-radius: 40px;
+    cursor: grab;
+}
+@media screen and (max-width: 769px) {
+    .CardContainer {
+        display: flex;
+        flex-basis: 90%;
+        border: 4px solid var(--hatterszin);
+        border-radius: 40px;
+        width: 360px;
+        justify-content: center;
+    }
+    .ImageContainer img {
+        border-radius: 40px;
+        width: 300px;
+    }
+}
