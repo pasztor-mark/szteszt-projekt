@@ -11,11 +11,18 @@
     justify-content: space-between;
     align-self: center;
     text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
 }
 .footerElementContainer a, .footerElementContainer div, .footerElementContainer p {
     color: white;
+    text-align: center;
     margin: 0px 5px 5px 0px;
+}
+.footerElementContainer p {
+    margin: auto;
 }
 .footerElementContainer img {
     max-height: 110px;

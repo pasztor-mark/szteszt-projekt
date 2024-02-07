@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.PageContainer {
+    padding-top: 120px;
+}
+.HeadlineScreen {
+    width: 100%;
+    height: 940px;
+    background-image: url("./images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: right;
+}
+.headline {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    margin-left: 70px;
+    margin-top: 80px;
+    width: 50%;
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.5);
+}
+.headline hr {
+    border: 3px solid white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 30px;
+}
+.headline p {
+    font-size: 2rem;
+    text-align: justify;
+
+}
+button {
+    width: 50%;
+    margin-top: 40px;
+    padding: 5px 5px 5px 5px;
+    font-size: 3rem;
+    background-color: rgb(69, 69, 69);
+    border: 5px solid rgb(40, 40, 40);
+    border-radius: 20px;
+    box-shadow: 0px 10px 22px 16px rgba(0,0,0,0.5);
+    color: white;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 22px 16px rgba(82, 82, 253, 0.3);
+}
+.headline a {
+    text-align: center;
+}
+.logo {
+    display: none;
+}
+.SponsorScreen {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(69, 69, 69);
+    text-align: center;
+    color: white;
+
+}
+h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.SponsorScreen p {
+    width: 60%;
+    margin: auto;
+    font-size: 1.4rem;
+}
+.SponsorScreen hr {
+    width: 70%;
+    border: 3px solid white; border-radius: 40px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.SponsorLogos {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    align-items: center;
+}
+.SponsorLogos img {
+    max-height: 90px;
+    max-width: 270px;
+}
+@media screen and (max-width:796px) {
+    body {
+        background-color: rgb(69, 69, 69);
+    }
+    .logo {
+        display: block;
+        filter: invert();
+        height: 200px;
+        width: 200px;
+        margin: auto;
+    }
+    .HeadlineScreen {
+        margin-top: -140px;
+        background: rgb(69, 69, 69);
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+
+    }
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .headline {
+        width: 70%;
+        padding: 0;
+        margin: 0;
+
+    }
+    .headline p {
+        text-align: center;
+        font-size:1.5rem;
+        line-height: 2.3rem;
+    }
+    button {
+        width: 100%;
+        font-size: 2rem;
+    }
+    .SponsorLogos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .SponsorLogos img {
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+    }
+    .SponsorLogos span {
+        flex-basis: 33%;
+    }
+    .SponsorScreen {
+        margin-top: 40px;
+        height: auto;
+        padding-bottom: 30px;
+    }
+}

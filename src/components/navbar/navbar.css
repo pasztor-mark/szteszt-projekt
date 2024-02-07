@@ -7,6 +7,7 @@
 
 nav {
     background-color: var(--hatterszin);
+    z-index: 99999;
 }
 * {
     font-family: var(--mainfont)
@@ -160,6 +161,7 @@ nav .NavLinks {
     }
     .SideContainer {
         display: inherit;
+        box-shadow: -17px 0px 15px -3px rgba(0,0,0,0.1);
     }
 }
 @media screen and (min-width: 769px) {
