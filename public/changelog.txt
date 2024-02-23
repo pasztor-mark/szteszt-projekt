@@ -18,6 +18,7 @@
         - Gradient hozzáadva egyes elemekhez.
         - Navbaron kis változások
     [Egyéb változások]
+        - barnus.png
         - lost track
 
     [Megjegyzések]

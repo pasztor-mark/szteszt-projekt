@@ -16,7 +16,7 @@ export function DataDisplay(props: Props) {
             <div className="data"><p>{props.data2}</p></div>
             <div className="data"><p>{props.data3}</p></div>
             <div className="data"><p>{props.data4}</p></div>
-            <div className="data"><p>{props.idData}</p></div>
+            <div className="data"><p style={{textAlign: "center", fontSize: 32}}>{props.idData}</p></div>
         </div>
         </>
     )

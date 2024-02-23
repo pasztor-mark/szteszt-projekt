@@ -157,13 +157,13 @@ export function AdminPage() {
     return (
         <>
             <Navbar/>
-            <div className="Main">
+            <div className="Main" id='gradient'>
                 <div id='TableEditorPanel'>
                     <h2>Árlista</h2>
                     <hr />
                     <div className="ContentTable">
                         <div className="setter">
-                        <input type='number' placeholder='arId' name="arId" id="arId" style={{backgroundColor: "lightblue"}} onChange={e => {
+                        <input type='number' placeholder='arId' name="arId" id="arId" style={{backgroundColor: "darkslategray"}} onChange={e => {
                                 {
                                     e.currentTarget.value.length == 0 ? {} : setArId(parseInt(e.currentTarget.value))
                                 }
@@ -189,16 +189,16 @@ export function AdminPage() {
                                 }
                             }}/>
 
-                        <button onClick={() =>setArak(updateAr(arId))}>Frissítés</button>
+                        <button onClick={() =>setArak(updateAr(arId))} style={{backgroundColor: "darkolivegreen", color: 'white'}}>Frissítés</button>
                         <button onClick={() =>{
                             setArak([...arak, {id: arak.length+1, SzolgNev: arSzolgNev, MinAr: arMin, MaxAr: arMax, Leiras: arLeiras}])
                             setUpdateAr(true)
                         }
-                            }>Hozzáadás</button>
+                            } style={{backgroundColor: "darkolivegreen", color: 'white'}}>Hozzáadás</button>
                         <button className='deleteBtn' onClick={() =>{
                             deleteAr(arId)
                             setUpdateAr(true)
-                        }} style={{backgroundColor: "lightcoral"}}>Törlés</button>
+                        }} style={{backgroundColor: "maroon", color: 'white'}}>Törlés</button>
                         </div>
                         <div className="tbl">
                         {
@@ -215,7 +215,7 @@ export function AdminPage() {
                     <hr />
                     <div className="ContentTable">
                         <div className="setter">
-                        <input type='number' placeholder='elId' name="elId" id="elId" style={{backgroundColor: "lightblue"}} onChange={e => {
+                        <input type='number' placeholder='elId' name="elId" id="elId" style={{backgroundColor: "darkslategray"}} onChange={e => {
                                 {
                                     e.currentTarget.value.length == 0 ? {} : setElId(parseInt(e.currentTarget.value))
                                 }
@@ -241,8 +241,8 @@ export function AdminPage() {
                                 }
                             }}/>
 
-                        <button onClick={() =>setElerhetosegek(updateElerhetoseg(elId))}>Frissítés</button>
-                        <button onClick={() =>{
+                        <button style={{backgroundColor: "darkolivegreen", color: 'white'}} onClick={() =>setElerhetosegek(updateElerhetoseg(elId))}>Frissítés</button>
+                        <button style={{backgroundColor: "darkolivegreen", color: 'white'}} onClick={() =>{
                             setElerhetosegek([...elerhetosegek, {id: elerhetosegek.length+1, Nev: elNev, Email: elEmail, Tel: elTel, Cim: elCim}])
                             setUpdateElerhetoseg(true)
                         }
@@ -250,7 +250,7 @@ export function AdminPage() {
                         <button className='deleteBtn' onClick={() =>{
                             deleteElerhetoseg(elId)
                             setUpdateElerhetoseg(true)
-                        }} style={{backgroundColor: "lightcoral"}}>Törlés</button>
+                        }} style={{backgroundColor: "maroon", color: 'white'}}>Törlés</button>
                         </div>
                         <div className="tbl">
                         {
