@@ -54,8 +54,8 @@ export function AdminPage() {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
-                "X-Master-Key": xmk,
-                "X-Access-Key": xak
+                "X-Master-Key": "$2a$10$mw.8FITl.ZNlkWQLwjL4lO.O1OWX9y63YBpkOxoJRN85FwE1Sd1K.",
+                "X-Access-Key": "$2a$10$rgKENAc6q934.zEe8K4UjeZ0Iw2.B2dLPdrZUm9ATm6NCR2/Zxxc."
             }
         })
         console.log(response.data)
@@ -98,8 +98,8 @@ export function AdminPage() {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
-                "X-Master-Key": xmk,
-                "X-Access-Key": xak
+                "X-Master-Key": "$2a$10$mw.8FITl.ZNlkWQLwjL4lO.O1OWX9y63YBpkOxoJRN85FwE1Sd1K.",
+                "X-Access-Key": "$2a$10$rgKENAc6q934.zEe8K4UjeZ0Iw2.B2dLPdrZUm9ATm6NCR2/Zxxc."
             }
           }).then(response =>{
             const elerhetoseglista = response.data as Elerhetoseg;
@@ -128,8 +128,8 @@ export function AdminPage() {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
-                "X-Master-Key": xmk,
-                "X-Access-Key": xak
+                "X-Master-Key": "$2a$10$mw.8FITl.ZNlkWQLwjL4lO.O1OWX9y63YBpkOxoJRN85FwE1Sd1K.",
+                "X-Access-Key": "$2a$10$rgKENAc6q934.zEe8K4UjeZ0Iw2.B2dLPdrZUm9ATm6NCR2/Zxxc."
             }
         })
         console.log(response.data)
