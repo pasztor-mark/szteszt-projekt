@@ -1,0 +1,27 @@
+2024. 02. 23.
+
+    Features:
+    [Admin Oldal hozzáadva]
+        - 2 tábla (árak és elérhetőségek)
+        - CRUD irányítások
+        - Validation később
+        - Titkosított kulccsal elérhető, valószínűleg nem fog működni pages-en.
+        - Táblázatba kiírás
+        - Stílusra ráfér még egy kis munka.
+        - Reszponzivitást valaki intézze
+    [Új dataDisplay komponens]
+        - 5 adatot (4 any és 1 id adattag) vesz paraméterül
+        - Kiírja táblázatos formában.
+        - Stílus ezen is változhat.
+    Változások
+    [Stílusbeli változások]
+        - Gradient hozzáadva egyes elemekhez.
+        - Navbaron kis változások
+    [Egyéb változások]
+        - lost track
+
+    [Megjegyzések]
+        - Valószínű hogy a github pages nem fogja szeretni, ha valami baj van azt holnap megoldjuk, revertelni bármikor lehet.
+        - Ez igen!
+
+

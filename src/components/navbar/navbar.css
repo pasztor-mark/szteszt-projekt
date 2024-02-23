@@ -24,6 +24,8 @@ nav {
     height: 100vh;
     position: fixed;
     right: 0;
+    background: rgb(40,40,45);
+    background: linear-gradient(0deg, rgba(40,40,45,1) 0%, rgba(69,69,69,1) 100%);
 }
 
 nav .NavLinks {

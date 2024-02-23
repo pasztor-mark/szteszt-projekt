@@ -18,11 +18,11 @@ export function Landing() {
             <div className="HeadlineScreen">
                 <div className="headline">
                     <img src={Logo} alt="Logo" className='logo'/>
-                    <h1>A legjobbat<br/>vagy semmit.</h1>
+                    <h1>Ez igen!</h1>
                     <hr />
                     <p>Magyarország vezető autókozmetikai lánca, több millió elégedett ügyféllel, és megszépült autóval.  Kérj ajánlatot karosszéria-karbantartásra, matricázásra, vagy akár egy teljesen új, egyedi karosszériára a HuGyoS Original Bodyworks-nél!</p>
                     <a href="#">
-                        <button>LÁSSAM AZ ÁRAKAT</button>
+                        <button className='ctaButton'>LÁSSAM AZ ÁRAKAT</button>
                     </a>
                 </div>
             </div>
