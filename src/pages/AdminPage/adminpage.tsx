@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import './adminpage.css'
 import {Arlista, Ar} from '../../arak'
-import {xmk, xak} from '../../../keys'
 import {Elerhetoseg, Kontakt} from '../../elerhetoseg'
 import axios from 'axios'
 import Navbar from '../../components/navbar/navbar'
