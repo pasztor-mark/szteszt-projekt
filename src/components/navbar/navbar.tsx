@@ -19,10 +19,10 @@ export function Navbar() {
                             </Link>
                         </div>
                         <li></li>
-                        <li><a href="#" id='nlink'>Kezdőlap<hr /></a></li>
+                        <li><Link to="/"><a id='nlink'>Kezdőlap<hr /></a></Link></li>
                         <li><a href="#" id='nlink'>Rólunk<hr /></a></li>
                         <li><a href="#" id='nlink'>Galéria<hr /></a></li>
-                        <li><a href="#" id='nlink'>Árak<hr /></a></li>
+                        <li><Link to="/arak"><a id='nlink'>Árak<hr /></a></Link></li>
                         <li><a href="#" id='nlink'>Kapcsolat<hr /></a></li>
                     </ul>
             </nav>
@@ -37,10 +37,10 @@ export function Navbar() {
                     </div>
                 </div>
                 <ul className='NavLinks'>
-                        <li><a href="#" id='nlink'>Kezdőlap<hr /></a></li>
+                        <li><Link to="/"><a id='nlink'>Kezdőlap<hr /></a></Link></li>
                         <li><a href="#" id='nlink'>Galéria<hr /></a></li>
                         <li><a href="#" id='nlink'>Rólunk<hr /></a></li>
-                        <li><a href="#" id='nlink'>Árak<hr /></a></li>
+                        <li><Link to="/arak"><a id='nlink'>Árak<hr /></a></Link></li>
                         <li><a href="#" id='nlink'>Kapcsolat<hr /></a></li>
                 </ul>
             </nav>
