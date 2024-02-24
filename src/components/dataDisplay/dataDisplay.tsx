@@ -1,5 +1,5 @@
 import { } from 'react'
-import './dataDisplay.css'
+import './dataDisplay.scss'
 interface Props {
     data1: any
     data2: any

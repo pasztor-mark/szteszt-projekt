@@ -1,5 +1,5 @@
 import {} from 'react'
-import './landing.css'
+import './landing.scss'
 import Logo from './images/logo.png'
 import SLogo from './images/suzuki.png'
 import DLogo from './images/dodge.png'

@@ -3,7 +3,7 @@
 }
 .HeadlineScreen {
     width: 100%;
-    height: 940px;
+    height: 740px;
     background-image: url("./images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,18 +21,22 @@
     margin-top: 80px;
     width: 50%;
     text-shadow: 2px 4px rgba(0, 0, 0, 0.5);
-}
-.headline hr {
-    border: 3px solid white;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border-radius: 30px;
-}
-.headline p {
-    font-size: 2rem;
-    text-align: justify;
 
+    hr {
+        border: 3px solid white;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-radius: 30px;
+    }
+    p {
+        font-size: 2rem;
+        text-align: justify;
+    }
+    a {
+        text-align: center;
+    }
 }
+
 .ctaButton {
     width: 50%;
     margin-top: 40px;
@@ -50,9 +54,6 @@
     cursor: pointer;
     box-shadow: 0px 10px 22px 16px rgba(82, 82, 253, 0.3);
 }
-.headline a {
-    text-align: center;
-}
 .logo {
     display: none;
 }
@@ -64,35 +65,37 @@
     color: white;
     background: rgb(40,40,45);
     background: linear-gradient(0deg, rgba(40,40,45,1) 0%, rgba(69,69,69,1) 100%);
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+    p {
+        width: 60%;
+        margin: auto;
+        height: 30%;
+        font-size: 1.4rem;
+    }
+    hr {
+        width: 70%;
+        border: 3px solid white; border-radius: 40px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
-h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    padding-top: 10px;
-}
-.SponsorScreen p {
-    width: 60%;
-    margin: auto;
-    height: 30%;
-    font-size: 1.4rem;
-}
-.SponsorScreen hr {
-    width: 70%;
-    border: 3px solid white; border-radius: 40px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+
 .SponsorLogos {
     width: 90%;
     display: flex;
     justify-content: space-evenly;
     margin: auto;
     align-items: center;
-}
-.SponsorLogos img {
-    max-height: 90px;
-    max-width: 270px;
+    
+    img {
+        max-height: 90px;
+        max-width: 270px;
+    }
 }
 @media screen and (max-width:796px) {
     body {
@@ -107,10 +110,11 @@ h3 {
     }
     .logo {
         display: block;
-        filter: invert();
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 250px;
         margin: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
     .HeadlineScreen {
         margin-top: -140px;
@@ -121,19 +125,20 @@ h3 {
 
     }
     h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .headline {
-        width: 70%;
+        width: 90%;
         padding: 0;
         margin: 0;
 
+        p {
+            text-align: center;
+            font-size:1.5rem;
+            line-height: 2.3rem;
+        }
     }
-    .headline p {
-        text-align: center;
-        font-size:1.5rem;
-        line-height: 2.3rem;
-    }
+
     .ctaButton {
         width: 100%;
         font-size: 2rem;
@@ -141,16 +146,16 @@ h3 {
     .SponsorLogos {
         flex-direction: row;
         flex-wrap: wrap;
-    }
-    .SponsorLogos img {
 
-        margin-top: 15px;
-        margin-bottom: 15px;
+        img {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        span {
+            flex-basis: 40%;
+        }
+    }
 
-    }
-    .SponsorLogos span {
-        flex-basis: 33%;
-    }
     .SponsorScreen {
         margin-top: 40px;
         height: auto;

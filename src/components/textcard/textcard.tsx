@@ -1,5 +1,5 @@
 import {} from 'react'
-import './textcard.css'
+import './textcard.scss'
 
 export function Textcard(props) {
 return (

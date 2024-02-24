@@ -1,6 +1,6 @@
 import { } from 'react'
 import { useState } from 'react'
-import './sliderimage.css'
+import './sliderimage.scss'
 
 export function SliderImage(props) {
     const[imgWidth, setWidth] = useState(0)

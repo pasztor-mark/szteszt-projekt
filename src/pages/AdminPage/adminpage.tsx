@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './adminpage.css'
+import './adminpage.scss'
 import {Arlista, Ar} from '../../arak'
 import {Elerhetoseg, Kontakt} from '../../elerhetoseg'
 import axios from 'axios'

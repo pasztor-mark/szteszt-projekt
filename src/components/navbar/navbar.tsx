@@ -2,7 +2,7 @@ import { } from 'react'
 import { Link } from 'react-router-dom'
 import { FiMenu } from "react-icons/fi";
 import { useState } from 'react';
-import './navbar.css'
+import './navbar.scss'
 
 export function Navbar() {
     const [sideShown, setSide] = useState(true)
@@ -13,13 +13,14 @@ export function Navbar() {
                     <ul className='NavLinks'>
                         <div className="LogoCont">
                             <Link to="/">
-                            <a href="#" style={{fontSize: 80}}>
+                            <a href="#">
                                 <img src='logo.png' alt="Logo" />
                             </a>
                             </Link>
                         </div>
                         <li></li>
                         <li><a href="#" id='nlink'>Kezdőlap<hr /></a></li>
+                        <li><a href="#" id='nlink'>Rólunk<hr /></a></li>
                         <li><a href="#" id='nlink'>Galéria<hr /></a></li>
                         <li><a href="#" id='nlink'>Árak<hr /></a></li>
                         <li><a href="#" id='nlink'>Kapcsolat<hr /></a></li>
@@ -28,14 +29,17 @@ export function Navbar() {
             <nav className='SideContainer' id={sideShown ? 'sideActive' : 'sideInactive'}>
                 <div>
                     <div className="LogoCont">
-                        <a href="#" style={{fontSize: 100}}>
-                        <img src="logo.png" alt="Logo" />
-                        </a>
+                    <Link to="/">
+                            <a href="#" style={{fontSize: 100}}>
+                                <img src='logo.png' alt="Logo" />
+                            </a>
+                            </Link>
                     </div>
                 </div>
                 <ul className='NavLinks'>
                         <li><a href="#" id='nlink'>Kezdőlap<hr /></a></li>
                         <li><a href="#" id='nlink'>Galéria<hr /></a></li>
+                        <li><a href="#" id='nlink'>Rólunk<hr /></a></li>
                         <li><a href="#" id='nlink'>Árak<hr /></a></li>
                         <li><a href="#" id='nlink'>Kapcsolat<hr /></a></li>
                 </ul>
