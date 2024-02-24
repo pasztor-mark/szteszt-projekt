@@ -157,7 +157,16 @@ export function AdminPage() {
     return (
         <>
             <Navbar/>
+            <div className="loginNotification">
+                <h3 className='loggedInAs'>Bejelentkezve mint: <u>{localStorage.getItem("username")}.</u></h3>
+                <button className='logout' onClick={() =>{
+                    localStorage.setItem("loggedIn", "false")
+                    localStorage.removeItem("username")
+                    window.location.reload()
+                }}>Kijelentkezés</button>
+            </div>
             <div className="Main" id='gradient'>
+            
                 <div id='TableEditorPanel'>
                     <h2>Árlista</h2>
                     <hr />
