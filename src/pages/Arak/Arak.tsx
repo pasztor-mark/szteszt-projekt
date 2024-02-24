@@ -45,7 +45,6 @@ export function Arak() {
                 }
             </div>
             <div className="PriceForm">
-                <hr />
                 <h1>Az autója hálás lesz.</h1>
                 <p>Írja be az e-mail címét, küldje el nekünk és felkeressük Önt a további részletekkel.<br></br>Küldés előtt jelölje ki a kívánt szolgáltatást a fentebb található lista elemei közül.</p>
                 <div className="emailSender">
