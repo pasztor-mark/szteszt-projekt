@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import Navbar from '../../components/navbar/navbar'
 import Footer from '../../components/footer/Footer'
 import './ValidationForm.scss'
