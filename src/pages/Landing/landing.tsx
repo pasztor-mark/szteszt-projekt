@@ -20,7 +20,7 @@ export function Landing() {
                     <img src={Logo} alt="Logo" className='logo'/>
                     <h1>Ez igen!</h1>
                     <hr />
-                    <p>Magyarország vezető autókozmetikai lánca, több millió elégedett ügyféllel, és megszépült autóval.  Kérj ajánlatot karosszéria-karbantartásra, matricázásra, vagy akár egy teljesen új, egyedi karosszériára a HuGyoS Original Bodyworks-nél!</p>
+                    <p>Magyarország vezető autókozmetikai lánca, országszerte több tízezer elégedett ügyféllel, és megszépült autóval.  Kérj ajánlatot karosszéria-karbantartásra, matricázásra, nagyobb módosításokra vagy akár egy teljesen új, egyedi karosszériára a HuGyoS Original Bodyworks-nél!</p>
                     <a href="#">
                         <button className='ctaButton'>LÁSSAM AZ ÁRAKAT</button>
                     </a>
@@ -28,7 +28,7 @@ export function Landing() {
             </div>
             <div className="SponsorScreen">
                 <h3>PARTNERCÉGEINK</h3>
-                <p>Világhírű autómárkák, amelyek hisznek abban, hogy a műhelyeinkben a tőlük elvárt minőséghez mérhető eredményt kaphatsz, és együtt dolgoznak velünk.</p>
+                <p>Világhírű autómárkák, amelyek tudják, hogy a műhelyeinkben a tőlük elvárt minőséget nyújtjuk. Márkás, hivatalos alkatrészeinket egyenesen tőlük szerezzük.</p>
                 <hr />
                 <div className="SponsorLogos">
                     <span><img src={SLogo} alt="Suzuki Motorsports" /></span>

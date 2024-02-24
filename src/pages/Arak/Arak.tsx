@@ -34,9 +34,9 @@ export function Arak() {
             <img src={'logo.png'} alt="Logo" className='logo'/>
             <div className="header">
                 <h1>Árak</h1>
-                    <p>A szolgáltatásaink széles katalógusa, megközelítő minimum és maximum árakkal.
-                        Az árak természetesen csak tájékoztató jellegűek, ajánlatkérésért lássa az oldal alján található
-                        “Ajánlatkérés” ívet, töltse ki, és hamarosan visszatérünk egy ajánlattal.</p>
+                <p>A szolgáltatásaink széles katalógusa, megközelítő minimum és maximum árakkal.
+                        Az feltüntetett árak csak tájékoztató jellegűek, ajánlatkérésért töltse az oldal alján található
+                        “Ajánlatkérés” ívet. Ezután 2 munkanapon belül felvesszük önnel a kapcsolatot.</p>
                 <hr />
             </div>
             <div className="PriceCollection">
@@ -46,7 +46,7 @@ export function Arak() {
             </div>
             <div className="PriceForm">
                 <h1>Az autója hálás lesz.</h1>
-                <p>Írja be az e-mail címét, küldje el nekünk és felkeressük Önt a további részletekkel.<br></br>Küldés előtt jelölje ki a kívánt szolgáltatást a fentebb található lista elemei közül.</p>
+                <p>Töltse ki az alábbi mezőt az email címével, és mi felkeressük Önt a további részletekkel.<br></br>Küldés előtt jelölje ki a kívánt szolgáltatásokat a fentebb található lista elemei közül.</p>
                 <div className="emailSender">
                     <input type="text" className='emailInput' placeholder='  pelda@pelda.hu'/>
                     <button className='emailButton'>Kérem az ajánlatot!</button>
