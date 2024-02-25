@@ -5,6 +5,7 @@ import Arak from './pages/Arak/Arak.tsx'
 import {createHashRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import AdminPagev2 from './pages/AdminPagev2/AdminPagev2.tsx'
+import Gallery from './pages/Gallery/Gallery.tsx'
 
 const router = createHashRouter([
     {
@@ -19,6 +20,10 @@ const router = createHashRouter([
         path: "/arak",
         element: <Arak/>
     },
+    {
+        path: "/galeria",
+        element: <Gallery/>
+    }
     
 ])
 
