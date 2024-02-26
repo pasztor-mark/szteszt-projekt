@@ -9,6 +9,7 @@ interface Props {
     kepcim: string
     cimleiras: string
     kepleiras: string
+    modleiras: string
 }
 export function SliderImage(props: Props) {
     const[imgWidth, setWidth] = useState(0)
@@ -25,6 +26,8 @@ export function SliderImage(props: Props) {
             <h3>{props.cimleiras}</h3>
             <hr />
             <p>{props.kepleiras}</p>
+            <hr className='modHr'/>
+            <p>{props.modleiras}</p>
         </div>
         </>
     )
