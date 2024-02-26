@@ -40,8 +40,11 @@ $highlightcolor: #4BB984;
         display: flex;
         flex-direction: column;
         margin: auto;
-        background-image: url('./arBg.png');
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-image: url('./arBg2.png');
         background-size: cover;
+        background-position-y: 75%;
         box-shadow: 0px 0px 63px 20px rgba(0,0,0,0.3);
 
         hr {
@@ -109,13 +112,16 @@ $highlightcolor: #4BB984;
             width: 90%;
         }
         .PriceForm {
-            background-position: 70%;
+            padding: 0;
+            background-image: url('./arBgMobile.png');
+            background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
             h1 {
                 letter-spacing: 0;
                 font-size: 48;
                 width: 90%;
+                text-align: center;
             }
             hr {
                 margin-top: 40px;
