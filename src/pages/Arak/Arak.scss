@@ -16,7 +16,7 @@ $highlightcolor: #4BB984;
         hr {
             width: 70%;
             margin: auto;
-            border: 2.5px solid white;
+            border: 2.5px solid #4BB984;
             border-radius: 15px;
         }
     }
@@ -30,6 +30,8 @@ $highlightcolor: #4BB984;
     }
     .PriceCollection {
         display: flex;
+        margin: auto;
+        margin-top: 30px;
         flex-direction: row;
         flex-wrap: wrap;
         width: 80%;
@@ -45,7 +47,7 @@ $highlightcolor: #4BB984;
         hr {
             width: 80%;
             margin: auto;
-            border: 2.5px solid white;
+            border: 2.5px solid #4BB984;
             border-radius: 30px;
         }
         h1 {

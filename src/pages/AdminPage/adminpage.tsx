@@ -198,16 +198,16 @@ export function AdminPage() {
                                 }
                             }}/>
 
-                        <button onClick={() =>setArak(updateAr(arId))} style={{backgroundColor: "darkolivegreen", color: 'white'}}>Frissítés</button>
+                        <button onClick={() =>setArak(updateAr(arId))} className='addBtn'>Frissítés</button>
                         <button onClick={() =>{
                             setArak([...arak, {id: arak.length+1, SzolgNev: arSzolgNev, MinAr: arMin, MaxAr: arMax, Leiras: arLeiras}])
                             setUpdateAr(true)
                         }
-                            } style={{backgroundColor: "darkolivegreen", color: 'white'}}>Hozzáadás</button>
-                        <button className='deleteBtn' onClick={() =>{
+                            } className='addBtn'>Hozzáadás</button>
+                        <button onClick={() =>{
                             deleteAr(arId)
                             setUpdateAr(true)
-                        }} style={{backgroundColor: "maroon", color: 'white'}}>Törlés</button>
+                        }} className='deleteBtn'>Törlés</button>
                         </div>
                         <div className="tbl">
                         {
@@ -250,8 +250,8 @@ export function AdminPage() {
                                 }
                             }}/>
 
-                        <button style={{backgroundColor: "darkolivegreen", color: 'white'}} onClick={() =>setElerhetosegek(updateElerhetoseg(elId))}>Frissítés</button>
-                        <button style={{backgroundColor: "darkolivegreen", color: 'white'}} onClick={() =>{
+                        <button className='addBtn' onClick={() =>setElerhetosegek(updateElerhetoseg(elId))}>Frissítés</button>
+                        <button className='addBtn' onClick={() =>{
                             setElerhetosegek([...elerhetosegek, {id: elerhetosegek.length+1, Nev: elNev, Email: elEmail, Tel: elTel, Cim: elCim}])
                             setUpdateElerhetoseg(true)
                         }
@@ -259,7 +259,7 @@ export function AdminPage() {
                         <button className='deleteBtn' onClick={() =>{
                             deleteElerhetoseg(elId)
                             setUpdateElerhetoseg(true)
-                        }} style={{backgroundColor: "maroon", color: 'white'}}>Törlés</button>
+                        }}>Törlés</button>
                         </div>
                         <div className="tbl">
                         {

@@ -109,12 +109,12 @@ $mainfont: Verdana, Geneva, Tahoma, sans-serif;
         display: flex;
         flex-basis: 90%;
         border: 4px solid $hatterszin;
-        border-radius: 40px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
         width: 360px;
         justify-content: center;
     }
     .ImageContainer img {
-        border-radius: 40px;
-        width: 300px;
+        width: 100%;
     }
 }
