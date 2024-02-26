@@ -170,6 +170,7 @@ export function AdminPage() {
                 <div id='TableEditorPanel'>
                     <h2>Árlista</h2>
                     <hr />
+                    <h3 style={{textAlign: "center", marginBottom: 15}}>Elemszám: <u>{arak.length}</u></h3>
                     <div className="ContentTable">
                         <div className="setter">
                         <input type='number' placeholder='arId' name="arId" id="arId" style={{backgroundColor: "darkslategray"}} onChange={e => {
@@ -223,6 +224,7 @@ export function AdminPage() {
                 <h2>Elérhetőségek</h2>
                     <hr />
                     <div className="ContentTable">
+                    <h3 style={{textAlign: "center", marginBottom: 15}}>Elemszám: <u>{elerhetosegek.length}</u></h3>
                         <div className="setter">
                         <input type='number' placeholder='elId' name="elId" id="elId" style={{backgroundColor: "darkslategray"}} onChange={e => {
                                 {
