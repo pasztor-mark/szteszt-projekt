@@ -6,12 +6,12 @@ $mainfont: Verdana, Geneva, Tahoma, sans-serif;
 
 .CardContainer {
     display: flex;
-    flex-basis: 49%;
+    flex-basis: 47%;
+    flex-wrap: wrap;
     border: 4px solid $hatterszin;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     justify-content: center;
-    max-width: 560px;
     text-align: center;
     height: 100%;
     flex-direction: column;

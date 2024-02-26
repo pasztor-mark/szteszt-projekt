@@ -33,6 +33,13 @@
         font-size: 30px;
         font-weight: bold;
     }
+    .addToCartBtn:hover {
+        cursor: pointer;
+        border-radius: 0;
+        box-shadow: 0px 0px 32px 9px rgba(0,0,0,0.2);
+        background-color: aqua;
+        transition: 0.2s ease-in;
+    }
     p {
         width: 90%;
         height: 100px;

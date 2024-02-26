@@ -10,6 +10,11 @@ import afterTest from './images/m2/after.png'
 import mk5Before from './images/supra/before.png'
 import mk5After from './images/supra/after.png'
 
+import alpineBefore from './images/alpine/before.png'
+import alpineAfter from './images/alpine/after.png'
+import gtBefore from './images/fordgt/before.png'
+import gtAfter from './images/fordgt/after.png'
+
 export function Gallery() {
 
     return (
@@ -42,6 +47,8 @@ Sajnos a 90-es éveket hátra kell hagyni a Toyotának, és egy hasonló hagyat�
 Ez az autó a japán megbízhatóság és a német teljesítmény tökéletes ötvözete, mivel ezt az autót egy 3 literes I6-os BMW B58 ikerturbós motor hajtja, kifejtve 382 lóerőt.
 Ügyfelünk egy híres japán sorozat által inspirált kozmetikai módosítást kért tőlünk, éltetve a Toyota több évtizedes hagyatékát.
 '/>
+                    <SliderImage beforeSrc={alpineBefore} afterSrc={alpineAfter} kepcim='Alpine A110' cimleiras='Kis motor, hatalmas erő' kepleiras='A francia autóipar koronája, a Renault sportautó-osztálya, Alpine, évtizedek óta készít művészi, pillekönnyű sportautókat. 1.1 tonnára jut 252 lóerő, amelyet egy kifejezetten hatékony 1.8 literes négyhengeres turbó motor hajt. A hengerűrtartalom meg se közelíti a konkurenciát, viszont az európai turbó hihetetlen hatékonyságának és a karosszéria könnyűsége miatt a pályán a az A110-et meg se közelítik a versenytársai. Ügyfelünk egy teljes festést kért, és egy retró stílusú inverz matricát az autó oldalára, ötvözve a modern és a régebbi francia autógyártás kozmetikai csodáit'/>
+                    <SliderImage beforeSrc={gtBefore} afterSrc={gtAfter} kepcim='Ford GT' cimleiras='A Le Mans legenda utódja' kepleiras='A fél évszázad óta élő legenda, a Ford GT, a legjobb sikersztori a motorsport történelmében, amikor a Le Mans 24 órás futamon az amerikai erő második helyre kényszerítette a Ferrarit. Ötvenegy év múlva, a Ford csapata nem felejtette el ezt a sikert, és azóta törekszik arra, hogy az új modell felérhessen a régivel. Az amerikai szuperautók csúcsa, a Ford kihozta a lehető legtöbbet a 3.5 literes hathengeres motorokból, 647 lóerővel, annak érdekében, hogy a pálya legjobbjai lehessenek. Ügyfelünk a tiszta, egyszerű modifikációkra esküszik, egy szénszálas szettet és üvegsötétítést bízott ránk.'/>
                 </div>
             </div>
             <Footer FooterText="Copyright 2024 HuGyoS Original Bodyworks Ltd. Semmilyen jog nincs fenntartva, csak egy iskolai projekt, legyenek szívesek nem beperelni minket. Minden felhasznált tartalom a jogos szerzőjének tulajdona." />

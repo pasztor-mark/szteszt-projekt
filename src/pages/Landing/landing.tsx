@@ -7,6 +7,7 @@ import BLogo from './images/bmw.png'
 import RLogo from './images/renault.png'
 import HLogo from './images/honda.png'
 import ALogo from './images/alpine.png'
+import { Link } from 'react-router-dom'
 import Navbar from '../../components/navbar/navbar'
 import Footer from '../../components/footer/Footer'
 
@@ -22,7 +23,7 @@ export function Landing() {
                     <hr />
                     <p>Magyarország vezető autókozmetikai lánca, országszerte több tízezer elégedett ügyféllel, és megszépült autóval.  Kérj ajánlatot karosszéria-karbantartásra, matricázásra, nagyobb módosításokra vagy akár egy teljesen új, egyedi karosszériára a HuGyoS Original Bodyworks-nél!</p>
                     <a href="#">
-                        <button className='ctaButton'>LÁSSAM AZ ÁRAKAT</button>
+                        <Link to="/arak"><button className='ctaButton'>LÁSSAM AZ ÁRAKAT</button></Link>
                     </a>
                 </div>
             </div>
