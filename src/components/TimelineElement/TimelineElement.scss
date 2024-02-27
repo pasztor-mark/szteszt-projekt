@@ -1,0 +1,86 @@
+$gradient: linear-gradient(0deg, rgba(40, 40, 45, 1) 0%, rgba(69, 69, 69, 1) 50%, rgba(40, 40, 45, 1) 100%);
+$highlightcolor: #4BB984;
+
+.ElementContainer {
+    background: none !important;
+    transition: 0.3s;
+    margin-left: 25px;
+    border-radius: 20px;
+    width: 100%;
+
+    img {
+        width: 150%;
+        margin-bottom: 30px;
+        margin-left: -25%;
+        filter: invert(66%) sepia(64%) saturate(374%) hue-rotate(99deg) brightness(86%) contrast(81%);
+    }
+
+    h3 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    hr {
+        border: 2.5px solid $highlightcolor;
+        border-radius: 20px;
+
+        margin: auto;
+        width: 90%;
+    }
+
+    p {
+        text-align: center;
+        height: min-content;
+        margin-top: 15px;
+        filter: drop-shadow(0px 3px 15px #000000);
+        font-size: 24px;
+    }
+
+}
+.ElementContainer:hover {
+    z-index: 9;
+    color: rgb(84, 166, 194);
+    transition: 0.3s;
+    hr {
+        border: 2.5px solid rgb(84, 166, 194) !important;
+        transition: 0.3s;
+    }
+    .IconContainer svg {
+        color: rgb(84, 166, 194);
+        transition: 0.3s;
+    }
+    .imageCont img {
+        filter: invert(67%) sepia(59%) saturate(386%) hue-rotate(152deg) brightness(80%) contrast(86%);
+        transition: 0.3s;
+    }
+}
+
+@media screen and (max-width: 796px) {
+    .ElementContainer {
+        width: 90%;
+        padding: 0;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        .imageCont {
+            flex-basis: 10%;
+            position: absolute;
+            margin-left: -30%;
+            margin-top: 35.5%;
+            img {
+                transform: rotate(90deg);
+            }
+        }
+        .IconContainer {
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+        }
+        p {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+    }
+}
