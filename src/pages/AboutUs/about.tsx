@@ -4,7 +4,7 @@ import Navbar from '../../components/navbar/navbar'
 import Footer from '../../components/footer/Footer'
 import TimelineElement from '../../components/TimelineElement/TimelineElement'
 import { FiZap, FiTool, FiTrendingUp, FiBriefcase, FiDollarSign, FiAward, FiHash, FiBarChart, FiMap, FiGlobe, FiTruck, FiSun } from "react-icons/fi";
-import barnus from './barnus.png'
+import TeamPhoto from './TeamPhoto.png'
 
 export function About() {
     return (
@@ -20,15 +20,26 @@ export function About() {
                     </div>
                     <div className="BarnusScreen">
                         <div className='barnusImg'>
-                            <img src={barnus} alt="Barnus." />
+                            <img src={TeamPhoto} alt="Barnus." />
 
                         </div>
                         <div className='ceoDiv'>
                             <hr className='ceoHr' />
                         </div>
                         <div>
+                        <div>
                             <h3>Plavecz Barnabás</h3>
-                            <p>CEO<br />HuGyoS Original Bodyworks</p>
+                            <p>Chief Executive Officer</p>
+                            </div>
+                            <div>
+                            <h3>Pásztor Márk</h3>
+                            <p>Chief Keef Officer</p>
+                            </div>
+                            <div>
+                            <h3>Bogárdi Benedek</h3>
+                            <p>Chief Financial Officer</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
