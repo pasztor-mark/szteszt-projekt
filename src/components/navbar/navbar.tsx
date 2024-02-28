@@ -23,7 +23,7 @@ export function Navbar() {
                         <li><Link to="/about"><a href="#" id='nlink'>Rólunk<hr /></a></Link></li>
                         <li><Link to="/galeria"><a href="#" id='nlink'>Galéria<hr /></a></Link></li>
                         <li><Link to="/arak"><a id='nlink'>Árak<hr /></a></Link></li>
-                        <li><a href="#" id='nlink'>Kapcsolat<hr /></a></li>
+                        <li><Link to="/contact"><a href="#" id='nlink'>Kapcsolat<hr /></a></Link></li>
                     </ul>
             </nav>
             <nav className='SideContainer' id={sideShown ? 'sideActive' : 'sideInactive'}>
@@ -41,7 +41,7 @@ export function Navbar() {
                         <li><Link to="/galeria"><a href="#" id='nlink'>Galéria<hr /></a></Link></li>
                         <li><Link to="/about"><a href="#" id='nlink'>Rólunk<hr /></a></Link></li>
                         <li><Link to="/arak"><a id='nlink'>Árak<hr /></a></Link></li>
-                        <li><a href="#" id='nlink'>Kapcsolat<hr /></a></li>
+                        <li><Link to="/contact"><a href="#" id='nlink'>Kapcsolat<hr /></a></Link></li>
                 </ul>
             </nav>
             <div className="SidebarToggler" id={sideShown ? 'togglerActive' : 'togglerInactive'}>

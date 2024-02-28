@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client'
 import Landing from './pages/Landing/landing.tsx'
-
+import Contact from './pages/Contact/Contact.tsx'
 import Arak from './pages/Arak/Arak.tsx'
 import {createHashRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
@@ -28,6 +28,10 @@ const router = createHashRouter([
     {
         path: "/about",
         element: <About/>
+    },
+    {
+        path: "/contact",
+        element: <Contact/>
     }
     
 ])
