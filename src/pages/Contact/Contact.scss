@@ -9,6 +9,9 @@ $highlightcolor: #4BB984;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    .logo {
+        display: none;
+    }
     .HeadlineSection {
         width: 85%;
         margin: auto;
@@ -106,9 +109,17 @@ $highlightcolor: #4BB984;
         background-image: url('./mobileBackground.png');
         background-size: cove;
         background-position-x:center;
+        padding-top: 20px;
+        .logo {
+            display: block;
+        }
         .HeadlineSection {
             flex-direction: column;
+
             .title {
+                h1 {
+                    font-size: 40px;
+                }
                 margin-bottom: 30px;
             }
         }

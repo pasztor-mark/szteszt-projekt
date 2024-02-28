@@ -2,22 +2,28 @@ $gradient: linear-gradient(0deg, rgba(40, 40, 45, 1) 0%, rgba(69, 69, 69, 1) 50%
 $highlightcolor: #4BB984;
 
 .AboutContainer {
+    .logo {
+        display: none;
+    }
     background: $gradient;
     overflow-x: hidden;
     color: white;
     text-align: center;
+    background-image: url('./workshop.png') !important;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .PlaviBarnus {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        width: 100%;
+        width: 90%;
+        margin: auto;
         align-items: center;
-        background-image: url('./workshop.png') !important;
-        background-attachment:fixed;
+
         height: 1020px;
-        background-repeat: no-repeat;
-        background-size: cover;
+
 
         .textBlock {
             flex-basis: 56%;
@@ -102,7 +108,9 @@ $highlightcolor: #4BB984;
 
     .TimelineContainer {
         width: 100%;
-        margin-bottom: 90px;
+        padding-bottom: 90px;
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(5px);
         h1 {
             margin-top: 25px;
             margin-bottom: 55px;
@@ -159,9 +167,13 @@ $highlightcolor: #4BB984;
 
 @media screen and (max-width: 796px) {
     .AboutContainer {
+        background: $gradient !important;
+        .logo {
+            display: block;
+        }
         .PlaviBarnus {
             width: 100%;
-            background: none !important;
+            margin-top: -100px !important;
             .textBlock {
                 flex-basis: 90%;
                 h1 {

@@ -1,4 +1,4 @@
-$gradient: linear-gradient(0deg, rgba(40,40,45,1) 0%, rgba(69,69,69,1) 50%, rgba(40,40,45,1) 100%);
+$gradient: linear-gradient(0deg, rgba(40, 40, 45, 1) 0%, rgba(69, 69, 69, 1) 50%, rgba(40, 40, 45, 1) 100%);
 $highlightcolor: #4BB984;
 
 .PageContainer {
@@ -25,7 +25,7 @@ $highlightcolor: #4BB984;
     text-align: center;
     margin-top: 80px;
     width: 50%;
-    text-shadow: 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
 
     hr {
         border: 3px solid $highlightcolor;
@@ -108,7 +108,7 @@ $highlightcolor: #4BB984;
 @media screen and (max-width:796px) {
     body {
         background: rgb(40,40,45);
-        background: linear-gradient(0deg, rgba(40,40,45,1) 0%, rgba(69,69,69,1) 100%);
+        background: $gradient;
     }
     .PageContainer {
         background-image: none;

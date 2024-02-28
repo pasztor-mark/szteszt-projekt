@@ -2,6 +2,7 @@ import { } from 'react'
 import './about.scss'
 import Navbar from '../../components/navbar/navbar'
 import Footer from '../../components/footer/Footer'
+import Logo from './logo.png'
 import TimelineElement from '../../components/TimelineElement/TimelineElement'
 import { FiZap, FiTool, FiTrendingUp, FiBriefcase, FiDollarSign, FiAward, FiHash, FiBarChart, FiMap, FiGlobe, FiTruck, FiSun } from "react-icons/fi";
 import TeamPhoto from './TeamPhoto.png'
@@ -11,6 +12,7 @@ export function About() {
         <>
             <Navbar />
             <div className="AboutContainer">
+                <img src={Logo} alt="Logo" className='logo'/>
                 <div className="PlaviBarnus">
                     <div className="textBlock">
                         <h1>HuGyoS Original Bodyworks</h1>
@@ -49,7 +51,7 @@ export function About() {
                         <TimelineElement icon={<FiZap />} cim='Kezdet' leiras='Első projektünk egy 20000 forintos lerobbant Suzuki Swift volt, amelyet egyedi külsővel láttunk el.' />
                         <TimelineElement icon={<FiTool />} cim='Kész projekt' leiras='A Swift elkészült, megalapozva a jövőbeli munkáink standardját.' />
                         <TimelineElement icon={<FiTrendingUp />} cim='Népszerűség' leiras='A közösségi média imádta az elkészült kocsit, növekszik a hírnevünk.' />
-                        <TimelineElement icon={<FiBriefcase />} cim='Első megbízások' leiras='Megkaptuk az első testreszabó munkánkat, egy M2 matricázását.' />
+                        <TimelineElement icon={<FiBriefcase />} cim='Megbízások' leiras='Megkaptuk az első testreszabó munkánkat, egy M2 matricázását.' />
                         <TimelineElement icon={<FiDollarSign />} cim='Első profitok' leiras='A megbízások növekvő számának köszönhetően befektettünk egy nagyobb garázsba.' />
                         <TimelineElement icon={<FiAward />} cim='Siker' leiras='Több év kitartás és kemény munka gyümölcse, ma már számos szakmai oklevéllel büszkélkedhetünk' />
                     </div>
@@ -64,7 +66,7 @@ export function About() {
                     </div>
                 </div>
             </div>
-            <Footer FooterText="Copyright 2024 HuGyoS Original Bodyworks Ltd. Semmilyen jog nincs fenntartva, csak egy iskolai projekt, legyenek szívesek nem beperelni minket. Minden felhasznált tartalom a jogos szerzőjének tulajdona. Az e-mail nem kerül eltárolásra, nem történik semmi, túl drága az e-mail service" />
+            <Footer FooterText="Copyright 2024 HuGyoS Original Bodyworks Ltd. Semmilyen jog nincs fenntartva, csak egy iskolai projekt, legyenek szívesek nem beperelni minket. Minden felhasznált tartalom a jogos szerzőjének tulajdona." />
         </>
     )
 }

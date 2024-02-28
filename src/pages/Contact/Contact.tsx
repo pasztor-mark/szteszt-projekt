@@ -4,6 +4,7 @@ import axios from 'axios'
 import { Elerhetoseg, Kontakt } from '../../elerhetoseg'
 import Navbar from '../../components/navbar/navbar'
 import Footer from '../../components/footer/Footer'
+import Logo from './logo.png'
 import ContactCard from '../../components/ContactCard/ContactCard'
 import { FiHelpCircle, FiMessageCircle, FiClock } from 'react-icons/fi'
 
@@ -33,6 +34,7 @@ export function Contact() {
         <>
             <Navbar />
             <div className="ContactContainer">
+                <img src={Logo} alt="Logo" className='logo' />
                 <div className="HeadlineSection">
                     <div className="title">
                         <h1>Vegye fel velünk a kapcsolatot</h1>
