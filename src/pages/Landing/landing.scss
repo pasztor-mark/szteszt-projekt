@@ -11,33 +11,27 @@ $highlightcolor: #4BB984;
     background-position-x: right;
 }
 .HeadlineScreen {
-    width: 100%;
     height: 740px;
-
 }
 .headline {
     display: flex;
     flex-direction: column;
-    position: absolute;
     color: white;
     font-size: 3em;
-    margin-left: 70px;
     text-align: center;
-    margin-top: 80px;
+    margin: 80px 0px 0px 70px;
     width: 50%;
     text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
 
     hr {
         border: 3px solid $highlightcolor;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        margin: 25px 0px 25px 0px;
         border-radius: 30px;
     }
     p {
         font-size: 2rem;
-        text-align: center;
     }
-    a {
+    p, a {
         text-align: center;
     }
 }
@@ -46,7 +40,7 @@ $highlightcolor: #4BB984;
     width: 50%;
     margin-top: 40px;
     
-    padding: 5px 5px 5px 5px;
+    padding: 10px 10px 10px 10px;
     font-size: 3rem;
     background-color: rgba(69, 69, 69, 0.6);
     border: 0;
@@ -87,9 +81,8 @@ $highlightcolor: #4BB984;
     hr {
         width: 70%;
         margin: auto;
-        border: 3px solid $highlightcolor; border-radius: 40px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        border: 3px solid $highlightcolor; border-radius: 30px;
+        margin: 20px 0px 20px 0px
     }
 }
 
@@ -125,23 +118,18 @@ $highlightcolor: #4BB984;
         height: 250px;
         width: 250px;
         margin: auto;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        margin: 25px 0px 25px 0px;
     }
     .HeadlineScreen {
         margin-top: -140px;
-
-        overflow-x: hidden;
         display: flex;
         justify-content: center;
-
     }
     h1 {
         font-size: 3rem;
     }
     .headline {
         width: 90%;
-        padding: 0;
         margin:0;
 
         p {
@@ -152,16 +140,13 @@ $highlightcolor: #4BB984;
     }
 
     .ctaButton {
-        width: 100%;
+
         font-size: 2rem;
     }
     .SponsorLogos {
-        flex-direction: row;
         flex-wrap: wrap;
-
         img {
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin: 15px 0px 15px 0px;
         }
         span {
             flex-basis: 40%;
@@ -171,9 +156,7 @@ $highlightcolor: #4BB984;
     .SponsorScreen {
         margin-top: 90px;
         height: auto;
-        padding-bottom: 30px;
-        padding-top: 50px;
+        padding: 30px 0px 50px 0px;
         background-color: transparent;
-        background: rgb(40,40,45);
     }
 }

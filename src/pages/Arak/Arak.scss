@@ -23,9 +23,7 @@ $highlightcolor: #4BB984;
     h1, p {
         color: white;
         width: 60%;
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px auto 20px auto;
         text-align: center;
     }
     .PriceCollection {
@@ -63,10 +61,7 @@ $highlightcolor: #4BB984;
         .emailSender {
             display: flex;
             justify-content: center;
-            margin: auto;
-            margin-top: 30px;
-            margin-bottom: 60px;
-
+            margin: 30px auto 60px auto;
             width: 100%;
             .emailInput {
                 width: 50%;

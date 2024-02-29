@@ -12,12 +12,11 @@ export function Arak() {
     useEffect(() => {
         console.log('Árlista fetch')
         async function load() {
-          axios.get('https://api.jsonbin.io/v3/b/65d8abcadc74654018a8cc61/latest?meta=false', {
+          axios.get('https://api.jsonbin.io/v3/b/65e04dad266cfc3fde90f8ec/latest?meta=false', {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
-                "X-Master-Key": "$2a$10$mw.8FITl.ZNlkWQLwjL4lO.O1OWX9y63YBpkOxoJRN85FwE1Sd1K.",
-                "X-Access-Key": "$2a$10$rgKENAc6q934.zEe8K4UjeZ0Iw2.B2dLPdrZUm9ATm6NCR2/Zxxc."
+
             }
           }).then(response =>{
             const arlist = response.data as Arlista;

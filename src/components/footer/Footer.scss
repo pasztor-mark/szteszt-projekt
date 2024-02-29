@@ -7,14 +7,13 @@
 }
 .footerElementContainer {
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column;
     justify-content: center;
     align-self: center;
     text-align: center;
     margin: auto;
     width: 90%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0px 10px 0px;
 
     p, a {
         color: white;

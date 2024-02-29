@@ -10,8 +10,7 @@ $highlightcolor: #4BB984;
 
     img {
         width: 150%;
-        margin-bottom: 30px;
-        margin-left: -25%;
+        margin: 0px 0px 30px -25%;
         filter: invert(66%) sepia(64%) saturate(374%) hue-rotate(99deg) brightness(86%) contrast(81%);
     }
 
@@ -23,7 +22,6 @@ $highlightcolor: #4BB984;
     hr {
         border: 2.5px solid $highlightcolor;
         border-radius: 20px;
-
         margin: auto;
         width: 90%;
     }
@@ -65,8 +63,7 @@ $highlightcolor: #4BB984;
         .imageCont {
             flex-basis: 10%;
             position: absolute;
-            margin-left: -30%;
-            margin-top: 35.5%;
+            margin: 35.5% 0px 0px -30%;
             img {
                 transform: rotate(90deg);
             }

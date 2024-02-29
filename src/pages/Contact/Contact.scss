@@ -14,7 +14,7 @@ $highlightcolor: #4BB984;
     }
     .HeadlineSection {
         width: 85%;
-        margin: auto;
+        margin: auto, auto, 100px, auto;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -69,15 +69,12 @@ $highlightcolor: #4BB984;
         padding-bottom: 30px;
         h1 {
             font-size: 54px;
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin: 15px 0px 15px 0px;    
         }
         hr {
             width: 70%;
-            margin: auto;
             border: 3px solid $highlightcolor; border-radius: 10px;
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin: 15px auto 15px auto;
         }
         table {
             margin: auto;

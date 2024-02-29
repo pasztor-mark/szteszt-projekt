@@ -1,15 +1,10 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 .loginNotification {
-    padding-top: 150px;
     background-color: rgb(69, 69, 69);
     color: white;
     text-align: center;
     font-size: 24px;
-    padding-bottom: 30px;
+    padding: 150px 0px 30px 0px;
     u {
         color: #4BB984;
     }
@@ -73,13 +68,10 @@
 }
 
 #TableEditorPanel {
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: auto;
+    padding: 0px 10px 20px 10px;
     flex-basis: 40%;
     min-height: 800px;
-    margin-left: 25px;
+    margin: 0px 0px auto 25px;
     border-radius: 20px;
     box-shadow: 0px 0px 22px 11px rgba(0,0,0,0.1);
     
@@ -92,8 +84,7 @@
         width: 80%;
         border: 2px solid #4BB984;
         border-radius: 30px;
-        margin-bottom: 15px;
-        margin-top: 15px;
+        margin: 15px 0px 15px 0px;
     }
 }
 .setter {
