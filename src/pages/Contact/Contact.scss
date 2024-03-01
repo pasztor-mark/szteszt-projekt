@@ -11,10 +11,11 @@ $highlightcolor: #4BB984;
     background-attachment: fixed;
     .logo {
         display: none;
+        margin: auto;
     }
     .HeadlineSection {
         width: 85%;
-        margin: auto, auto, 100px, auto;
+        margin: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -42,13 +43,7 @@ $highlightcolor: #4BB984;
             border-radius: 30px;
             iframe {
                 border-radius: 30px;
-                opacity: 40%;
                 width: 100%;
-                transition: 0.3s ease-out;
-            }
-            iframe:hover {
-                opacity: 100%;
-                transition: 0.3s ease-in;
             }
         }
     }

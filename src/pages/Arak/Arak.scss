@@ -11,7 +11,6 @@ $highlightcolor: #4BB984;
     .header {
         width: 100%;
         font-size: 24px;
-
         
         hr {
             width: 70%;
@@ -100,8 +99,14 @@ $highlightcolor: #4BB984;
 @media screen and (max-width: 769px) {
     .main {
         padding-top: 1px;
+        .header {
+            p {
+                width: 88%;
+            }
+        }
         .logo {
             display: block;
+            margin: auto;
         }
         .PriceCollection {
             width: 90%;
@@ -123,6 +128,10 @@ $highlightcolor: #4BB984;
             }
             p {
                 width: 80%;
+            }
+            h1, p {
+                    text-shadow: 2px 2px 15px #000;
+                
             }
             .emailSender {
                 flex-direction: column;

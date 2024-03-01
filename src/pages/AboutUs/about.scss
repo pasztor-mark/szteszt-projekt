@@ -19,12 +19,10 @@ $highlightcolor: #4BB984;
         flex-direction: row;
         justify-content: space-evenly;
         width: 90%;
-        margin: auto;
+        margin: auto auto 40px auto;
         align-items: center;
-
-        height: 1020px;
-
-
+        justify-content: center;
+        padding-top: 160px;
         .textBlock {
             flex-basis: 56%;
 
@@ -164,6 +162,7 @@ $highlightcolor: #4BB984;
         background: $gradient !important;
         .logo {
             display: block;
+            margin: auto;
         }
         .PlaviBarnus {
             width: 100%;
@@ -189,6 +188,21 @@ $highlightcolor: #4BB984;
             }
             .Timeline {
                 flex-direction: column;
+                align-items: center;
+                .ElementContainer {
+                    h3 {
+                        font-size: 40px;
+                        margin-bottom: 0;
+                    }
+                    p {
+                        width: 90%;
+                        font-size: 20px;
+                    }
+                    .IconContainer svg {
+                        font-size: 72px;
+                    }
+                }
+
             }
         }
     }
