@@ -74,17 +74,15 @@ $highlightcolor: #4BB984;
         height: 1px;
     }
 }
+
 @media screen and (max-width: 969px) {
-    .GalleryContainer{
+    .GalleryContainer {
         padding-top: 0;
+
         .HeadlineImage {
             background-image: url('./MobileHeadlineImage.png');
             height: 430px;
             background-position-x: 10%;
-        }
-        .HeadlineText .sectionBreak {
-            height: 160px;
-            width: 1px;
         }
     }
 }

@@ -1,16 +1,19 @@
-$gradient: linear-gradient(0deg, rgba(40,40,45,1) 0%, rgba(69,69,69,1) 50%, rgba(40,40,45,1) 100%);
+$gradient: linear-gradient(0deg, rgba(40, 40, 45, 1) 0%, rgba(69, 69, 69, 1) 50%, rgba(40, 40, 45, 1) 100%);
 $highlightcolor: #4BB984;
 
 .main {
     padding-top: 140px;
     min-height: 960px;
     background: $gradient;
+
     .logo {
         display: none;
     }
+
     .header {
         width: 100%;
         font-size: 24px;
+
         
         hr {
             width: 70%;
@@ -19,12 +22,15 @@ $highlightcolor: #4BB984;
             border-radius: 15px;
         }
     }
-    h1, p {
+
+    h1,
+    p {
         color: white;
         width: 60%;
         margin: 20px auto 20px auto;
         text-align: center;
     }
+
     .PriceCollection {
         display: flex;
         margin: auto;
@@ -33,6 +39,7 @@ $highlightcolor: #4BB984;
         flex-wrap: wrap;
         width: 80%;
     }
+
     .PriceForm {
         display: flex;
         flex-direction: column;
@@ -42,7 +49,7 @@ $highlightcolor: #4BB984;
         background-image: url('./arBg2.png');
         background-size: cover;
         background-position-y: 75%;
-        box-shadow: 0px 0px 63px 20px rgba(0,0,0,0.3);
+        box-shadow: 0px 0px 63px 20px rgba(0, 0, 0, 0.3);
 
         hr {
             width: 80%;
@@ -50,18 +57,22 @@ $highlightcolor: #4BB984;
             border: 2.5px solid #4BB984;
             border-radius: 30px;
         }
+
         h1 {
             font-size: 64px;
             letter-spacing: 2px;
         }
+
         p {
             font-size: 24px;
         }
+
         .emailSender {
             display: flex;
             justify-content: center;
             margin: 30px auto 60px auto;
             width: 100%;
+
             .emailInput {
                 width: 50%;
                 height: 80px;
@@ -69,22 +80,25 @@ $highlightcolor: #4BB984;
                 border-bottom-left-radius: 20px;
                 border: 0;
                 font-size: 30px;
-                box-shadow: 0px 20px 43px 7px rgba(0,0,0,0.6);
+                box-shadow: 0px 20px 43px 7px rgba(0, 0, 0, 0.6);
             }
+
             .emailInput::placeholder {
                 font-size: 30px;
             }
+
             .emailButton {
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
                 background-color: $highlightcolor;
-                box-shadow: 0px 20px 43px 7px rgba(0,0,0,0.6);
+                box-shadow: 0px 20px 43px 7px rgba(0, 0, 0, 0.6);
                 color: white;
                 font-size: 28px;
                 font-weight: bold;
                 border: 0;
                 transition: 0.2s ease-out;
             }
+
             .emailButton:hover {
                 cursor: pointer;
                 background-color: rgb(84, 166, 194);
@@ -99,43 +113,40 @@ $highlightcolor: #4BB984;
 @media screen and (max-width: 769px) {
     .main {
         padding-top: 1px;
-        .header {
-            p {
-                width: 88%;
-            }
-        }
         .logo {
             display: block;
             margin: auto;
         }
+
         .PriceCollection {
             width: 90%;
         }
+
         .PriceForm {
             padding: 0;
             background-image: url('./arBgMobile.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
+
             h1 {
                 letter-spacing: 0;
                 font-size: 48;
                 width: 90%;
                 text-align: center;
             }
+
             hr {
                 margin-top: 40px;
             }
+
             p {
                 width: 80%;
-            }
-            h1, p {
-                    text-shadow: 2px 2px 15px #000;
-                
             }
             .emailSender {
                 flex-direction: column;
                 justify-content: center;
+
                 .emailInput {
                     margin: auto;
                     width: 90%;
@@ -143,6 +154,7 @@ $highlightcolor: #4BB984;
                     border-top-right-radius: 20px;
                     border-bottom-left-radius: 0px;
                 }
+
                 .emailButton {
                     margin: auto;
                     width: 90%;
