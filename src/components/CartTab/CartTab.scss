@@ -1,0 +1,115 @@
+$gradient: linear-gradient(0deg, rgba(40, 40, 45, 1) 0%, rgba(69, 69, 69, 1) 50%, rgba(40, 40, 45, 1) 100%);
+$highlightcolor: #4BB984;
+
+.CartButton {
+    position: fixed;
+    border-radius: 10px;
+    background-color: rgba(49, 49, 49, 0.4);
+    box-shadow: -11px 12px 15px -3px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+
+    vertical-align: middle;
+    height: 120px;
+    width: 100px;
+    right: 0;
+    padding: 3px 3px 3px 3px;
+    a svg {
+        text-align: center;
+        padding-top: 4px;
+        font-size: 92px;
+        color: $highlightcolor;
+    }
+    p {
+        margin: auto;
+        color: #4BB984;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .ItemContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+.ShoppingCart {
+    width: 300px;
+    background: linear-gradient(180deg, rgba(40,40,45,1) 0%, rgba(69,69,69,0.9) 100%);
+    right: 0;
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    position: fixed;
+    top:0;
+    padding-top: 100px;
+    transition: 0.3s;
+    text-align: center;
+    color: white;
+    h1 {
+        font-size: 72px;
+        color: $highlightcolor;
+    }
+    hr {
+        margin: 10px auto 10px auto;
+        width: 98%;
+        border: 2px solid $highlightcolor; border-radius: 10px;
+    }
+}
+#SideActive {
+    z-index: 999;
+    margin-right: 0px;
+    transition: 0.3s;
+}
+#SideInactive {
+    z-index: -1;
+    margin-right: -300px;
+}
+#ButtonActive {
+    margin-right: 300px;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: 0.3s;
+}
+#ButtonInactive {
+    margin-left: 10px;
+    transition: 0.3s;
+}
+@media screen and (max-width: 796px) {
+    .CartButton {
+        position: fixed;
+        margin-top: 25px;
+        margin-left: 10px;
+        height: 60px;
+        width: 60px;
+        left: 0;
+        a svg {
+            font-size: 52px;
+        }
+    }
+    .ShoppingCart {
+        right: 100;
+        padding-top: 20px;
+        left: 0;
+       
+    }
+    #SideActive {
+        z-index: 999;
+        margin-left: 0px;
+        transition: 0.3s;
+    }
+    #SideInactive {
+        z-index: -1;
+        margin-left: -300px;
+    }
+    #ButtonActive {
+        margin-left: 300px;
+        border-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: 0.3s;
+    }
+    #ButtonInactive {
+        margin-left: 10px;
+        transition: 0.3s;
+    }
+}

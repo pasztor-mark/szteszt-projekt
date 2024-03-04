@@ -5,10 +5,25 @@ import {Arlista, Ar} from '../../arak'
 import Footer from '../../components/footer/Footer'
 import './Arak.scss'
 import Textcard from '../../components/textcard/textcard'
+import CartTab from '../../components/CartTab/CartTab'
+
 
 export function Arak() {
 
     const [ arak, setArak ] = useState([] as Ar[])
+    const [cart, setCart] = useState([] as string[])
+    async function callStorageEvent() {
+        var temp = [] as string[]
+        await setCart([...cart])
+        for (var i = 0; i < localStorage.length; i++) {
+            const item = localStorage.getItem(`cart${i+1}`)
+            if (item != null) {
+                await temp.push(JSON.parse(item))
+            }
+        }
+        await console.log(temp)
+        await setCart(temp)
+    }
     useEffect(() => {
         console.log('Árlista fetch')
         async function load() {
@@ -25,11 +40,11 @@ export function Arak() {
         }
         load()
       }, [])
-
     return (
         <>
         <Navbar></Navbar>
         <div className="main">
+            <CartTab cartContent={cart as []}/>
             <img src={'logo.png'} alt="Logo" className='logo'/>
             <div className="header">
                 <h1>Árak</h1>
@@ -40,7 +55,7 @@ export function Arak() {
             </div>
             <div className="PriceCollection">
                 {
-                    arak.map(arak =>(<Textcard cim={arak.SzolgNev} minAr={arak.MinAr} maxAr={arak.MaxAr} leiras={arak.Leiras}/>))
+                    arak.map(arak =>(<Textcard cim={arak.SzolgNev} minAr={arak.MinAr} maxAr={arak.MaxAr} leiras={arak.Leiras} cartId={arak.id} callEvent={callStorageEvent}/>))
                 }
             </div>
             <div className="PriceForm">
