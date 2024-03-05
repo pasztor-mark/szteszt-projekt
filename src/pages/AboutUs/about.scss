@@ -106,7 +106,7 @@ $highlightcolor: #4BB984;
     .TimelineContainer {
         width: 100%;
         padding-bottom: 90px;
-        background-color: rgba(0, 0, 0, 0.2);
+        background: linear-gradient(0deg, rgba(0,0,0,0.4) 90%, rgba(41,41,41,0) 100%);
         backdrop-filter: blur(5px);
         h1 {
             margin: 25px 0px 55px 0px;

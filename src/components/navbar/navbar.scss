@@ -40,6 +40,10 @@ nav {
             font-size: 2rem;
         }
     }
+    .active a {
+        color: #4BB984;
+        font-weight: bold;
+    }
     .LogoCont {
         position: absolute;
         flex-basis: 40%;
@@ -145,6 +149,7 @@ nav {
     line-height: 100%;
     color: $szovegszin;
     opacity: 70%;
+    
 }
 
 #togglerActive {
@@ -160,6 +165,10 @@ nav {
     }
     .SideContainer {
         display: inherit;
+        .active a {
+            color: #4BB984;
+            font-weight: bold;
+        }
         box-shadow: -17px 0px 15px -3px rgba(0,0,0,0.1);
     }
 }

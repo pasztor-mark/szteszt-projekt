@@ -56,11 +56,10 @@ $highlightcolor: #4BB984;
 
     }
     .opening {
-
         width: 100%;
         color: white;
         text-align: center;
-        background-color: rgba(41, 41, 41, 0.8);
+        background: linear-gradient(0deg, rgba(39,39,39,1) 4%, rgba(41,41,41,0.75) 79%, rgba(255,255,108,0) 100%);
         padding-bottom: 30px;
         h1 {
             font-size: 54px;

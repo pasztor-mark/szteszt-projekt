@@ -30,6 +30,7 @@ $highlightcolor: #4BB984;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        
     }
 }
 .ShoppingCart {
@@ -49,10 +50,12 @@ $highlightcolor: #4BB984;
         font-size: 72px;
         color: $highlightcolor;
     }
-    hr {
-        margin: 10px auto 10px auto;
-        width: 98%;
-        border: 2px solid $highlightcolor; border-radius: 10px;
+    .CartTotal {
+        background-color: #4BB984;
+        padding: 15px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
     }
 }
 #SideActive {
@@ -84,6 +87,7 @@ $highlightcolor: #4BB984;
         width: 60px;
         left: 0;
         a svg {
+            width: 60px;
             font-size: 52px;
         }
     }
@@ -92,6 +96,10 @@ $highlightcolor: #4BB984;
         padding-top: 20px;
         left: 0;
        
+    }
+    .CartTotal {
+        position: fixed;
+        bottom: 0;
     }
     #SideActive {
         z-index: 999;

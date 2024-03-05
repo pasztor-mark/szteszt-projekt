@@ -6,12 +6,18 @@ import {createHashRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import AdminPagev2 from './pages/AdminPagev2/AdminPagev2.tsx'
 import About from './pages/AboutUs/about.tsx'
+import { ErrorPage } from './pages/errorPage/errorPage.tsx'
 import Gallery from './pages/Gallery/Gallery.tsx'
 
 const router = createHashRouter([
+
+    {
+        path: "*",
+        element: <ErrorPage/>
+    },
     {
         path: "/",
-        element: <Landing/>
+        element: <Landing/>,
     },
     {
         path: "/adminPage",

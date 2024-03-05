@@ -1,0 +1,21 @@
+$gradient: linear-gradient(0deg, rgba(40, 40, 45, 1) 0%, rgba(69, 69, 69, 1) 50%, rgba(40, 40, 45, 1) 100%);
+$highlightcolor: #4BB984;
+.ErrorCont {
+    width: 100%;
+    height: 100vh;
+    background: $gradient;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    h1 {
+
+        text-align: center;
+        color: white;
+    }
+    a {
+        color: #4BB984;
+        font-size: 30px;
+    }
+}
