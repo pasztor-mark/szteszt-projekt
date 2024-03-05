@@ -21,7 +21,6 @@ export function Arak() {
                 await temp.push(JSON.parse(item))
             }
         }
-        await console.log(temp)
         await setCart(temp)
     }
     useEffect(() => {

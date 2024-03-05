@@ -10,12 +10,14 @@ import ALogo from './images/alpine.png'
 import { Link } from 'react-router-dom'
 import Navbar from '../../components/navbar/navbar'
 import Footer from '../../components/footer/Footer'
+import video from './images/hugyos.mp4'
 
 export function Landing() {
     return (
         <>
         <Navbar/>
         <div className="PageContainer">
+            <video autoPlay muted loop className='videoBg' src={video}></video>
             <div className="HeadlineScreen">
                 <div className="headline">
                     <img src={Logo} alt="Logo" className='logo'/>
